@@ -237,7 +237,7 @@ details p{padding:0 0 18px;color:var(--ink-2)}
 .job:nth-child(3n){border-right:0}
 .job .tijd{font:700 13px/1 var(--num);letter-spacing:.1em;text-transform:uppercase;color:var(--flame)}
 .job h3{font-size:30px}
-@media (max-width:900px){.jobs{grid-template-columns:1fr}.job{border-right:0}}
+@media (max-width:900px){.jobs{grid-template-columns:1fr!important}.job{border-right:0}}
 
 /* trots */
 .pride{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--rink);border-bottom:2px solid var(--rink)}
@@ -383,7 +383,7 @@ form.trial input:focus,form.trial select:focus{border-color:var(--rink);outline:
           <img class="route-img" src="img/2515.jpg" alt="Face-off bij een seniorenwedstrijd">
           <span class="who">Vroeger gespeeld</span>
           <h3>Terug op het ijs</h3>
-          <ul><li>Pond Hockey op dinsdag en donderdag</li><li>Geen competitie, wel scherp</li><li>Oud-leden onder leiding van Michel &amp; Herman</li></ul>
+          <ul><li>Pond Hockey op dinsdag of donderdag</li><li>Trainingslid: meetrainen met de senioren</li><li>Klaar voor meer? Stroom door naar het wedstrijdteam</li></ul>
           <span class="go">Stap weer in →</span>
         </a>
         <a class="route" href="#teams" data-go="teams">
@@ -526,28 +526,36 @@ form.trial input:focus,form.trial select:focus{border-color:var(--rink);outline:
   </section>
 
   <section data-route-panel="terug" hidden>
-    <div class="wrap two">
-      <div>
-        <p class="eyebrow">Pond Hockey · dinsdag &amp; donderdag 21:15–22:15</p>
-        <h2 style="margin-top:10px">Je handen weten het nog</h2>
-        <p class="muted" style="margin-top:16px;font-size:19px">Pond Hockey is voor wie vroeger speelde en weer wil. Eén uur per week, geen competitieverplichting, wel echt hockey. Onder leiding van Michel en Herman, in kleedkamer 3 en 4.</p>
-        <div class="steps" style="grid-template-columns:1fr 1fr;margin-top:32px">
-          <div class="step"><h3>Kom een avond mee</h3><p class="muted">Neem je eigen spullen mee als je die nog hebt.</p></div>
-          <div class="step"><h3>Spullen te oud?</h3><p class="muted">Tijdens de proefavond lenen we je een uitrusting.</p></div>
-          <div class="step"><h3>Kies je avond</h3><p class="muted">Dinsdag of donderdag, allebei 21:15.</p></div>
-          <div class="step"><h3>€62,50 per maand</h3><p class="muted">€625 voor het seizoen van september tot en met juni, maandelijks te betalen.</p></div>
-        </div>
+    <div class="wrap">
+      <div class="sec-head"><div><p class="eyebrow">Vroeger gespeeld</p><h2 style="margin-top:10px">Je handen weten het nog</h2><p class="muted">Kies hoe vaak en hoe fanatiek je weer wilt spelen. Je kunt klein beginnen en later doorstromen.</p></div></div>
+      <div class="jobs" style="grid-template-columns:repeat(3,1fr)">
+        <div class="job"><span class="tijd">Recreatief · dinsdag of donderdag 21:15</span><h3>Pond Hockey</h3><p class="muted">Eén uur per week echt hockey, zonder competitie. Voor oud-spelers, onder leiding van Michel en Herman.</p><p><b>€ 62,50 per maand</b><br><small class="muted">€ 625 per seizoen</small></p></div>
+        <div class="job"><span class="tijd">Trainen · woensdag 21:00</span><h3>Trainingslid</h3><p class="muted">Train één keer per week mee met Senioren 1, onder leiding van Paul Vincent. Je speelt geen wedstrijden.</p><p><b>€ 70 per maand</b><br><small class="muted">€ 700 per seizoen</small></p></div>
+        <div class="job" style="background:var(--rink);color:#fff"><span class="tijd" style="color:var(--amber)">Competitie · woensdag én vrijdag 21:00</span><h3>Wedstrijdteam</h3><p style="color:#C9D1DA">Twee trainingen per week en wedstrijden in de competitie van IJshockey Nederland. Instromen kan, in overleg met de trainer.</p><p><b>€ 132,50 per maand</b><br><small style="color:#98A2AE">€ 1.325 per seizoen</small></p></div>
       </div>
-      <form class="panel trial">
-        <p class="eyebrow">Proefavond</p>
-        <h3>Weer het ijs op</h3>
-        <label>Voorkeursavond<select><option>Dinsdag 21:15</option><option>Donderdag 21:15</option></select></label>
-        <label>Naam<input required value="Karin"></label>
-        <label>Waar en hoe lang speelde je?<input value="Heerenveen, junioren, 6 jaar"></label>
-        <label>E-mailadres<input type="email" required placeholder="naam@voorbeeld.nl"></label>
-        <button class="btn red" type="submit" style="justify-content:center">Plan mijn proefavond</button>
-        <p class="muted" style="font-size:14px">Prototype: er wordt niets verstuurd.</p>
-      </form>
+      <p class="muted" style="margin-top:14px;font-size:15px">Het seizoen loopt van 1 september tot 1 juli. Begin je als trainingslid of bij Pond Hockey en wil je daarna wedstrijden spelen, dan stroom je door naar het wedstrijdteam.</p>
+
+      <div class="two" style="margin-top:56px">
+        <div style="display:grid;gap:18px">
+          <img class="foto" src="img/2515.jpg" alt="Face-off bij een seniorenwedstrijd">
+          <div class="steps" style="grid-template-columns:1fr 1fr">
+            <div class="step"><h3>Kom een keer meetrainen</h3><p class="muted">Kies de avond die bij je past en neem je eigen spullen mee als je die nog hebt.</p></div>
+            <div class="step"><h3>Spullen te oud?</h3><p class="muted">Tijdens de proeftraining lenen we je een uitrusting.</p></div>
+            <div class="step"><h3>Kies je lidmaatschap</h3><p class="muted">Pond Hockey, trainingslid of wedstrijdteam.</p></div>
+            <div class="step"><h3>Doorstromen</h3><p class="muted">Smaakt het naar meer? Samen met de trainer kijk je wanneer je instroomt in het wedstrijdteam.</p></div>
+          </div>
+        </div>
+        <form class="panel trial">
+          <p class="eyebrow">Proeftraining</p>
+          <h3>Weer het ijs op</h3>
+          <label>Wat wil je proberen?<select><option>Pond Hockey – dinsdag 21:15</option><option>Pond Hockey – donderdag 21:15</option><option>Trainingslid – woensdag 21:00</option><option>Wedstrijdteam – woensdag of vrijdag 21:00</option></select></label>
+          <label>Naam<input required value="Karin"></label>
+          <label>Waar en hoe lang speelde je?<input value="Heerenveen, junioren, 6 jaar"></label>
+          <label>E-mailadres<input type="email" required placeholder="naam@voorbeeld.nl"></label>
+          <button class="btn red" type="submit" style="justify-content:center">Plan mijn proeftraining</button>
+          <p class="muted" style="font-size:14px">Prototype: er wordt niets verstuurd.</p>
+        </form>
+      </div>
     </div>
   </section>
 </div>
