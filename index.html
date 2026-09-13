@@ -279,6 +279,17 @@ figcaption{font:600 13px/1.3 var(--num);letter-spacing:.06em;text-transform:uppe
 .duo img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#fff}
 @media (max-width:760px){.duo{grid-template-columns:1fr}}
 
+/* reviews */
+.reviews{display:grid;grid-template-columns:auto 1fr 1fr 1fr;gap:0;border:2px solid var(--rink);background:#fff}
+.reviews>div{padding:26px 24px;border-right:1px solid var(--line);display:grid;gap:12px;align-content:start}
+.reviews>div:last-child{border-right:0}
+.score-g{background:var(--rink);color:#fff;min-width:200px}
+.score-g b{font:900 72px/1 var(--display);font-variant-numeric:tabular-nums}
+.stars{color:var(--amber);font-size:20px;letter-spacing:2px}
+.reviews blockquote{margin:0;font-size:17px;line-height:1.5}
+.reviews cite{font:600 13px/1.3 var(--num);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);font-style:normal}
+@media (max-width:980px){.reviews{grid-template-columns:1fr}.reviews>div{border-right:0;border-bottom:1px solid var(--line)}}
+
 footer{background:var(--rink);color:#C9D1DA;padding:56px 0 30px;font-size:15px}
 footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
 footer h4{margin:0 0 12px;font:700 14px/1 var(--num);letter-spacing:.14em;text-transform:uppercase;color:var(--amber)}
@@ -406,6 +417,18 @@ form.trial input:focus,form.trial select:focus{border-color:var(--rink);outline:
         <div><b>2020</b><span>Senioren kampioen voor zo'n 300 toeschouwers, promotie naar de 3e divisie.</span></div>
       </div>
       <p style="margin-top:12px"><span class="voorbeeld">Uit oude nieuwsberichten – laten controleren</span></p>
+    </div>
+  </section>
+
+<section style="padding-top:0;padding-bottom:72px">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:24px"><div><p class="eyebrow">Wat anderen zeggen</p><h2 style="margin-top:10px">Laagdrempelig. Echt.</h2></div></div>
+      <div class="reviews">
+        <div class="score-g"><span class="eyebrow" style="color:var(--amber)">Google</span><b>4,8</b><span class="stars" aria-label="4,8 van 5 sterren">★★★★★</span><span style="color:#C9D1DA">28 reviews</span></div>
+        <div><span class="stars" aria-label="5 sterren">★★★★★</span><blockquote>“Leuke gezellige en laagdrempelige ijshockey vereniging. Prima trainers en faciliteiten.”</blockquote><cite>M J · Google</cite></div>
+        <div><span class="stars" aria-label="5 sterren">★★★★★</span><blockquote>“Een ijshockey vereniging waar de beoefenaar echt centraal staat; of je nu een beginner of een ver gevorderde speler bent.”</blockquote><cite>Maurits van Brunschot · Google</cite></div>
+        <div><span class="stars" aria-label="4 sterren">★★★★☆</span><blockquote>“Mooie sport ijshockey. Verdient veel meer toeschouwers!”</blockquote><cite>Rob Bosma · Google</cite></div>
+      </div>
     </div>
   </section>
 
