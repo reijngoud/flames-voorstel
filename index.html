@@ -201,6 +201,7 @@ details p{padding:0 0 18px;color:var(--ink-2)}
 .step+.step{border-left-color:var(--rink)}
 .step::before{content:counter(s);font:900 54px/1 var(--display);color:var(--ice-2);display:block;margin-bottom:6px;-webkit-text-stroke:2px var(--rink)}
 .step h3{font-size:24px;margin-bottom:8px}
+.steps5{grid-template-columns:repeat(5,1fr)}
 @media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.steps{grid-template-columns:1fr}}
 
@@ -480,13 +481,15 @@ form.trial input:focus,form.trial select:focus{border-color:var(--rink);outline:
 
   <section data-route-panel="nieuw">
     <div class="wrap">
-      <div class="sec-head"><div><p class="eyebrow">IJshockey Academy · zaterdag 16:30–17:30</p><h2 style="margin-top:10px">Zo gaat het in vier stappen</h2></div></div>
-      <div class="steps">
-        <div class="step"><h3>Meld je aan</h3><p class="muted">Vul het formulier hieronder in. We mailen binnen een paar dagen welke zaterdag je kunt komen.</p></div>
-        <div class="step"><h3>Kom 30 minuten eerder</h3><p class="muted">Een trainer helpt je in de uitrusting. Schaatsen huur je bij De Meent.</p></div>
-        <div class="step"><h3>4 lessen gratis</h3><p class="muted">Vallen hoort erbij en doet met bescherming geen pijn. Schaatsen, remmen, bochten, stick en puck.</p></div>
-        <div class="step"><h3>Beslis daarna</h3><p class="muted">Leuk? Dan schrijf je je in voor het seizoen. Onze trainers kijken wanneer je kunt doorstromen naar een team.</p></div>
+      <div class="sec-head"><div><p class="eyebrow">IJshockey Academy · zaterdag 16:30–17:30</p><h2 style="margin-top:10px">Zo gaat het in vijf stappen</h2></div></div>
+      <div class="steps steps5">
+        <div class="step"><h3>Meld je aan</h3><p class="muted">Vul het formulier hieronder in.</p></div>
+        <div class="step"><h3>Wij verwerken je aanmelding</h3><p class="muted">De Academy-coördinator bekijkt je aanmelding.</p></div>
+        <div class="step"><h3>Wij nodigen je uit</h3><p class="muted">Je hoort welke zaterdag je kunt beginnen. Soms is er een wachtlijst.</p></div>
+        <div class="step"><h3>4 lessen gratis</h3><p class="muted">Kom 30 minuten eerder; een trainer helpt je in de uitrusting. Schaatsen huur je bij De Meent.</p></div>
+        <div class="step"><h3>Jij beslist</h3><p class="muted">Leuk? Dan schrijf je je in voor het seizoen. <b>93% gaat door.</b></p></div>
       </div>
+      
 
       <div class="two" style="margin-top:56px">
         <div style="display:grid;gap:28px">
